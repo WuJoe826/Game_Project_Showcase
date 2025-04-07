@@ -1,0 +1,60 @@
+[gd_scene load_steps=12 format=3 uid="uid://35gqb2r88672"]
+
+[ext_resource type="Script" path="res://scene/coin/coin.gd" id="1_aqa1v"]
+[ext_resource type="Texture2D" uid="uid://kps5m6g81njw" path="res://Asset/coin/coin0001.png" id="2_ylcfm"]
+[ext_resource type="Texture2D" uid="uid://23co8q888cg" path="res://Asset/coin/coin0002.png" id="3_11ai8"]
+[ext_resource type="Texture2D" uid="uid://donbj3yuoo0lw" path="res://Asset/coin/coin0003.png" id="4_0kcni"]
+[ext_resource type="Texture2D" uid="uid://r7p7m625xicq" path="res://Asset/coin/coin0004.png" id="5_l85wx"]
+[ext_resource type="Texture2D" uid="uid://1sw1dcxnev24" path="res://Asset/coin/coin0005.png" id="6_bhn2v"]
+[ext_resource type="Texture2D" uid="uid://coain5m0412ko" path="res://Asset/coin/coin0006.png" id="7_yvjdp"]
+[ext_resource type="Texture2D" uid="uid://cecebbsnkkhq4" path="res://Asset/coin/coin0007.png" id="8_y7s82"]
+[ext_resource type="Texture2D" uid="uid://bynpmq6uqd4e6" path="res://Asset/coin/coin0008.png" id="9_58g24"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v2bfg"]
+radius = 3.16228
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_581l3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ylcfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_11ai8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0kcni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_l85wx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bhn2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yvjdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_y7s82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_58g24")
+}],
+"loop": true,
+"name": &"rotate",
+"speed": 9.0
+}]
+
+[node name="Coin" type="AnimatableBody2D"]
+script = ExtResource("1_aqa1v")
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+top_level = true
+shape = SubResource("CircleShape2D_v2bfg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.225, 0.225)
+sprite_frames = SubResource("SpriteFrames_581l3")
+animation = &"rotate"
+frame = 4
+frame_progress = 0.340411

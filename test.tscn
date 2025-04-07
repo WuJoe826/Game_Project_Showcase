@@ -1,0 +1,117 @@
+[gd_scene load_steps=3 format=3 uid="uid://j7jcnvkcjava"]
+
+[ext_resource type="PackedScene" uid="uid://buhf21v052spk" path="res://scene/Player/Player.tscn" id="1_viq6k"]
+[ext_resource type="PackedScene" uid="uid://35gqb2r88672" path="res://scene/coin/coin.tscn" id="2_uifdb"]
+
+[node name="test" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_viq6k")]
+position = Vector2(687, 438)
+
+[node name="Coin13" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(448, 315)
+
+[node name="Coin13" parent="Coin13" instance=ExtResource("2_uifdb")]
+position = Vector2(-16, 39)
+
+[node name="Coin13" parent="Coin13/Coin13" instance=ExtResource("2_uifdb")]
+position = Vector2(-16, 39)
+
+[node name="Coin13" parent="Coin13/Coin13/Coin13" instance=ExtResource("2_uifdb")]
+position = Vector2(-16, 39)
+
+[node name="Coin13" parent="Coin13/Coin13/Coin13/Coin13" instance=ExtResource("2_uifdb")]
+position = Vector2(-16, 39)
+
+[node name="Coin13" parent="Coin13/Coin13/Coin13/Coin13/Coin13" instance=ExtResource("2_uifdb")]
+position = Vector2(-16, 39)
+
+[node name="Coin12" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(487, 314)
+
+[node name="Coin11" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(524, 313)
+
+[node name="Coin10" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(565, 315)
+
+[node name="Coin10" parent="Coin10" instance=ExtResource("2_uifdb")]
+position = Vector2(-44, 128)
+
+[node name="Coin9" parent="Coin10" instance=ExtResource("2_uifdb")]
+position = Vector2(-3, 125)
+
+[node name="Coin8" parent="Coin10" instance=ExtResource("2_uifdb")]
+position = Vector2(40, 124)
+
+[node name="Coin7" parent="Coin10" instance=ExtResource("2_uifdb")]
+position = Vector2(41, 88)
+
+[node name="Coin7" parent="Coin10/Coin7" instance=ExtResource("2_uifdb")]
+position = Vector2(-85, 3)
+
+[node name="Coin6" parent="Coin10" instance=ExtResource("2_uifdb")]
+position = Vector2(42, 52)
+
+[node name="Coin5" parent="Coin10" instance=ExtResource("2_uifdb")]
+position = Vector2(-2, 53)
+
+[node name="Coin2" parent="Coin10" instance=ExtResource("2_uifdb")]
+position = Vector2(-45, 53)
+
+[node name="Coin9" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(606, 312)
+
+[node name="Coin8" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(649, 311)
+
+[node name="Coin8" parent="Coin8" instance=ExtResource("2_uifdb")]
+position = Vector2(-99, 290)
+
+[node name="Coin7" parent="Coin8" instance=ExtResource("2_uifdb")]
+position = Vector2(-98, 254)
+
+[node name="Coin6" parent="Coin8" instance=ExtResource("2_uifdb")]
+position = Vector2(-97, 218)
+
+[node name="Coin14" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(450, 278)
+
+[node name="Coin14" parent="Coin14" instance=ExtResource("2_uifdb")]
+position = Vector2(37, 254)
+
+[node name="Coin14" parent="Coin14/Coin14" instance=ExtResource("2_uifdb")]
+position = Vector2(126, -1)
+
+[node name="Coin7" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(650, 275)
+
+[node name="Coin6" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(651, 239)
+
+[node name="Coin6" parent="Coin6" instance=ExtResource("2_uifdb")]
+position = Vector2(-40, 251)
+
+[node name="Coin5" parent="Coin6" instance=ExtResource("2_uifdb")]
+position = Vector2(-84, 252)
+
+[node name="Coin2" parent="Coin6" instance=ExtResource("2_uifdb")]
+position = Vector2(-127, 252)
+
+[node name="Coin4" parent="Coin6" instance=ExtResource("2_uifdb")]
+position = Vector2(-166, 253)
+
+[node name="Coin5" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(607, 240)
+
+[node name="Coin2" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(564, 240)
+
+[node name="Coin" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(485, 242)
+
+[node name="Coin4" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(525, 241)
+
+[node name="Coin3" parent="." instance=ExtResource("2_uifdb")]
+position = Vector2(450, 243)
