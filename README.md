@@ -1,4 +1,4 @@
-# Game_Project_Showcase
+# Game_Project
 A 2d top down game using Godot
 
 game scene showcase
